@@ -7,6 +7,7 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   final repository = ProductRepository();
+  
 
   final createProductUsecase = CreateProductUsecase(repository);
   createProductUsecase.call(
